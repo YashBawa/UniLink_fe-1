@@ -11,42 +11,42 @@ export default function Hackathon() {
 
   const students = [
     {
-      name: "Envisage 2.0",
-      description: "HackClub",
-      image:
-        "https://i.pinimg.com/originals/76/c8/88/76c8880774a07f9ae00f74a2de797c9c.png",
-      connected: true,
-    },
-    {
-      name: "Hack Knight",
-      description: "VITrendz",
-      image:
-        "https://dynamic.brandcrowd.com/asset/logo/5b592148-fbea-407f-ad15-b0f89e11062c/logo-search-grid-1x?v=637919176614870000",
-      connected: true,
-    },
-    {
-      name: "Techno",
-      description: "Microsoft Innovations Club",
+      name: "HSVIT",
+      description: "VITS",
       image:
         "https://img.favpng.com/22/21/9/hackathon-computer-programming-logo-technology-software-developer-png-favpng-Wh6VQxmJ8HBSub03gNxGFK60c.jpg",
       connected: false,
     },
     {
+      name: "MIC Hackathon",
+      description: "Microsoft",
+      image:
+        "https://i.pinimg.com/originals/76/c8/88/76c8880774a07f9ae00f74a2de797c9c.png",
+      connected: true,
+    },
+    {
+      name: "MessoHack",
+      description: "LMNIT",
+      image:
+        "https://dynamic.brandcrowd.com/asset/logo/5b592148-fbea-407f-ad15-b0f89e11062c/logo-search-grid-1x?v=637919176614870000",
+      connected: true,
+    },
+    {
       name: "Cyscom Hackathon",
-      description: "Google Developers Student Club",
+      description: "devfolio",
       image: "https://miro.medium.com/max/400/1*ovIa1El69EPsMeg6IR-PFg.png",
       connected: false,
     },
     {
       name: "Cyber Hack",
-      description: "Cyscom Club",
+      description: "Cyber-o-tech",
       image:
         "https://i.pinimg.com/originals/76/c8/88/76c8880774a07f9ae00f74a2de797c9c.png",
       connected: true,
     },
     {
       name: "Mesohack",
-      description: "VITFAM",
+      description: "Ruber",
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLSlnHklGa_3HZU93Q0BkB--4I1tRCIvaVyA&usqp=CAU",
       connected: true,
@@ -72,11 +72,11 @@ export default function Hackathon() {
           &nbsp; Hackathon
         </p>
         <div className="flex flex-wrap gap-4">
-          <div className="flex flex-col gap-2 justify-center items-center bg-[#ADF5FF] p-6 px-16 w-full md:w-1/4 flex-grow rounded-lg shadow-xl">
+          <div className="flex flex-col gap-2 justify-center items-center bg-[#8ce492] p-6 px-16 w-full md:w-1/4 flex-grow rounded-lg shadow-xl">
             <p className="text-7xl font-bold text-[#184E77]">{13}</p>
             <p className="text-[#0075A2]">Active Hackathons</p>
           </div>
-          <div className="flex flex-col gap-2 justify-center items-center bg-[#B5E48C] p-6 px-16 w-full md:w-1/5 flex-grow rounded-lg shadow-xl">
+          <div className="flex flex-col gap-2 justify-center items-center bg-[#ADF5FF]  p-6 px-16 w-full md:w-1/5 flex-grow rounded-lg shadow-xl">
             <p className="text-7xl font-bold text-[#184E77]">{25}</p>
             <p className="text-[#34A0A4]">Expired Hackathons</p>
           </div>

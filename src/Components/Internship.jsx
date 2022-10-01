@@ -72,11 +72,11 @@ export default function Internship() {
           &nbsp; Internship
         </p>
         <div className="flex flex-wrap gap-4">
-          <div className="flex flex-col gap-2 justify-center items-center bg-[#ADF5FF] p-6 px-16 w-full md:w-1/4 flex-grow rounded-lg shadow-xl">
+          <div className="flex flex-col gap-2 justify-center items-center bg-[#8ce492] p-6 px-16 w-full md:w-1/4 flex-grow rounded-lg shadow-xl">
             <p className="text-7xl font-bold text-[#184E77]">{5}</p>
             <p className="text-[#0075A2]">Active Internships</p>
           </div>
-          <div className="flex flex-col gap-2 justify-center items-center bg-[#B5E48C] p-6 px-16 w-full md:w-1/5 flex-grow rounded-lg shadow-xl">
+          <div className="flex flex-col gap-2 justify-center items-center  bg-[#ADF5FF] p-6 px-16 w-full md:w-1/5 flex-grow rounded-lg shadow-xl">
             <p className="text-7xl font-bold text-[#184E77]">{9}</p>
             <p className="text-[#34A0A4]">Expired Internships</p>
           </div>

@@ -43,16 +43,19 @@ export default function Profile() {
             <div>
               <div className="p-6 text-2xl flex flex-col gap-6 pt-12">
                 <p>
-                  Name: <b>{"Pranshu Aggarwal"}</b>
+                  Name: <b>{"Yash Bawa"}</b>
                 </p>
-                <p>
+                {/* <p>
                   School: <b>{"SCOPE"}</b>
-                </p>
+                </p> */}
                 <p>
                   Major: <b>CSE Core</b>
                 </p>
                 <p>
                   College: <b>{"VIT, Chennai"}</b>
+                </p>
+                <p>
+                  Hackathons:<b>{"Meso Hack,Unfold 2022,Cyber-O-Day"}</b>
                 </p>
               </div>
             </div>

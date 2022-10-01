@@ -6,9 +6,31 @@ export default function View() {
   const [toggleDashboard, setToggleDashboard] = useState(false);
 
   useEffect(() => {
-    document.title = "Contests | Uni Link";
+    document.title = "Clubs | Uni Link";
   });
+  const hacks = [
+    {
+      name:"HSVIT",
+      location:"online/offline",
+      image:"https://i.pinimg.com/originals/76/c8/88/76c8880774a07f9ae00f74a2de797c9c.png"
+    },
+    {
+      name:"MessoHackathon",
+      location:"kolkata",
+      image:"https://i.pinimg.com/originals/76/c8/88/76c8880774a07f9ae00f74a2de797c9c.png"
+    },
+    {
+      name:"MICIA",
+      location :"Gujrat",
+      image:"https://i.pinimg.com/originals/76/c8/88/76c8880774a07f9ae00f74a2de797c9c.png"
+    },
+    {
+      name:"MIC hackathon",
+      location :"MG auditorium",
+      image:"https://i.pinimg.com/originals/76/c8/88/76c8880774a07f9ae00f74a2de797c9c.png"
+    }
 
+  ]
   const students = [
     {
       name: "Among Us",
@@ -69,22 +91,35 @@ export default function View() {
       <div className="p-4 w-full text-[#184E77]">
         <p className="text-5xl font-bold pb-4">
           <i className="fas fa-laptop"></i>
-          &nbsp; Contest
+          &nbsp; The Biosphere club
         </p>
-        <div className="flex flex-wrap gap-4">
-          <div className="flex flex-col gap-2 justify-center items-center bg-[#ADF5FF] p-6 px-16 w-full md:w-1/4 flex-grow rounded-lg shadow-xl">
-            <p className="text-7xl font-bold text-[#184E77]">{23}</p>
-            <p className="text-[#0075A2]">Active Contests</p>
-          </div>
-          <div className="flex flex-col gap-2 justify-center items-center bg-[#B5E48C] p-6 px-16 w-full md:w-1/5 flex-grow rounded-lg shadow-xl">
-            <p className="text-7xl font-bold text-[#184E77]">{21}</p>
-            <p className="text-[#34A0A4]">Expired Contests</p>
-          </div>
+        
+        <div className=" flex flex-row place-content-around box-border h-48 border-0 text-2xl w-full rounded-lg bg-blue-200">
+            <div className="text-black-bold flex items-center p-4 text font-serif ">
+              President:Lenin Shah
+              <br/>
+              Year of Foundation:2018
+              <br/>
+              Total Events:29
+            </div>
+            <div className="flex justify-end h-44 p-3" >
+              <img src="https://i.pinimg.com/originals/76/c8/88/76c8880774a07f9ae00f74a2de797c9c.png" alt="" width="200" />
+            </div>
         </div>
         <div>
+        <div className="flex flex-wrap gap-4 mt-16">
+          <div className="flex flex-col gap-2 justify-center items-center bg-[#ADF5FF] p-6 px-16 w-full md:w-1/4 flex-grow rounded-lg shadow-xl">
+            <p className="text-7xl font-bold text-[#184E77]">{15}</p>
+            <p className="text-[#0075A2]">Active Events</p>
+          </div>
+          <div className="flex flex-col gap-2 justify-center items-center bg-[#B5E48C] p-6 px-16 w-full md:w-1/5 flex-grow rounded-lg shadow-xl">
+            <p className="text-7xl font-bold text-[#184E77]">{15}</p>
+            <p className="text-[#34A0A4]">Expired Events</p>
+          </div>
+        </div>
           <div className="flex justify-end p-2 pt-4">
             <Button variant="contained">
-              <i className="fa fa-plus"></i>&nbsp; Host New Contest
+              <i className="fa fa-plus"></i>&nbsp; Host New Event
             </Button>
           </div>
           <div className="pt-4 grid md:grid-cols-2 grid-cols-1 gap-4">
