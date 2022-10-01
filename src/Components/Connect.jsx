@@ -92,7 +92,7 @@ export default function Connect() {
             <p className="text-7xl font-bold text-[#184E77]">{153}</p>
             <p className="text-[#0075A2]">Connections</p>
           </div>
-          <div className="flex flex-col gap-2 justify-center items-center bg-[#e4e48c] p-6 px-16 w-full md:w-1/5 flex-grow rounded-lg shadow-xl">
+          <div className="flex flex-col gap-2 justify-center items-center bg-[#FFDB58] p-6 px-16 w-full md:w-1/5 flex-grow rounded-lg shadow-xl">
             <p className="text-7xl font-bold text-[#184E77]">{10}</p>
             <p className="text-[#3c0e0e]">Pending request</p>
           </div>
