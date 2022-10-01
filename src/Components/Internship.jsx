@@ -4,7 +4,6 @@ import Header from "../Common/Header";
 
 export default function Internship() {
   const [toggleDashboard, setToggleDashboard] = useState(false);
-
   const students = [
     {
       name: "Pupilfirst",
