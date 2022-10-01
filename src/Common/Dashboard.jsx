@@ -59,6 +59,19 @@ export default function Dashboard() {
               </li>
               <li>
                 <Link
+                  href="/Clubs"
+                  className="relative flex flex-row items-center h-11 focus:outline-none hover:font-bold hover:bg-[#92e7ed] text-[#92e7ed] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent pr-6"
+                >
+                  <span className="inline-flex justify-center items-center ml-4">
+                    <i class="fa-solid fa-hotel"></i>
+                  </span>
+                  <span className="ml-2 text-sm tracking-wide truncate">
+                    Clubs
+                  </span>
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/blogs"
                   className="relative flex flex-row items-center h-11 focus:outline-none hover:font-bold hover:bg-[#92e7ed] text-[#92e7ed] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent pr-6"
                 >
@@ -70,6 +83,7 @@ export default function Dashboard() {
                   </span>
                 </Link>
               </li>
+              
               <li>
                 <Link
                   href="/hackathon"
@@ -84,7 +98,7 @@ export default function Dashboard() {
                 </Link>
               </li>
               <li>
-                <Link
+                {/* <Link
                   href="/contest"
                   className="relative flex flex-row items-center h-11 focus:outline-none hover:font-bold transition duration-300 hover:bg-[#92e7ed] text-[#92e7ed] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent pr-6"
                 >
@@ -94,7 +108,7 @@ export default function Dashboard() {
                   <span className="ml-2 text-sm tracking-wide truncate">
                     Contests
                   </span>
-                </Link>
+                </Link> */}
               </li>
               <li>
                 <Link

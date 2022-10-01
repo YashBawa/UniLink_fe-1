@@ -30,13 +30,13 @@ export default function Blogs() {
           &nbsp; Blogs
         </p>
         <div className="flex flex-wrap gap-4">
-          <div className="flex flex-col gap-2 justify-center items-center bg-[#ADF5FF] p-6 px-16 w-full md:w-1/4 flex-grow rounded-lg shadow-xl">
-            <p className="text-7xl font-bold text-[#184E77]">{32}</p>
-            <p className="text-[#0075A2]">Total blogs</p>
-          </div>
           <div className="flex flex-col gap-2 justify-center items-center bg-[#8ce492] p-6 px-16 w-full md:w-1/5 flex-grow rounded-lg shadow-xl">
             <p className="text-7xl font-bold text-[#184E77]">{12}</p>
             <p className="text-[#3c0e0e]">Published blogs</p>
+          </div>
+          <div className="flex flex-col gap-2 justify-center items-center bg-[#ADF5FF] p-6 px-16 w-full md:w-1/4 flex-grow rounded-lg shadow-xl">
+            <p className="text-7xl font-bold text-[#184E77]">{32}</p>
+            <p className="text-[#0075A2]">Total blogs</p>
           </div>
         </div>
         <div>

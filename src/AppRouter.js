@@ -10,9 +10,16 @@ import Connect from "./Components/Connect";
 import Blogs from "./Components/Blogs";
 import Contest from "./Components/Contest";
 import Internship from "./Components/Internship";
-
+import Loginpg from "./Components/Loginpg";
+import Signup from "./Components/Signup";
+import Clubs from "./Components/Clubs";
+import View from "./Components/View";
 const route = {
   "/": () => <Home />,
+  "/View":()=><View />,
+  "/Signup":()=><Signup/>,
+  "/Clubs":()=><Clubs/>,
+  "/Loginpg":()=> <Loginpg />,
   "/home": () => <HomePage />,
   "/connect": () => <Connect />,
   "/blogs": () => <Blogs />,
