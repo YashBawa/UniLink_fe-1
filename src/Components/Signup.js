@@ -3,14 +3,16 @@ import React, { useState } from "react";
 import { signup } from "../ApiUtils";
 import Image from "../Images/account_image.jpg";
 import email from "../Images/email.jpg";
+import preview from "../Images/preview.png";
 
 const main = {
   height: "100vh",
   textAlign: "center",
   display: "flex",
-  justifyContent: "center",
-  alignItems:"center",
-  backgroundColor: "#091360",
+  justifyContent: "space-around",
+  alignItems: "center",
+  paddingRight: "0px",
+  backgroundImage:"linear-gradient(#82CAFF,#CBC3E3)",
 };
 
 const submain = {
@@ -21,7 +23,7 @@ const submain = {
   boxShadow: "5px 6px  7px 6px #168AAD",
   paddingTop: "30px",
   borderRadius: "60px",
-  backgroundColor: "#76C893",
+  backgroundImage: "linear-gradient(#00ccff,violet)",
 };
 const profile = {
   height: "100px",
@@ -50,6 +52,9 @@ export default function Signup() {
   return (
     <div>
       <div style={main}>
+        <div className="flex justify-left ">
+          <img src={preview}></img>
+        </div>
         <div style={submain}>
           <div>
             <div
