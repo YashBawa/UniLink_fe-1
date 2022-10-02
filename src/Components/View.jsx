@@ -5,7 +5,7 @@ import Header from "../Common/Header";
 
 export default function View(props) {
   const [toggleDashboard, setToggleDashboard] = useState(false);
-  const [club, setClub] = useState();
+  const [club, setClub] = useState({});
   const [loading, setLoading] = useState(true);
   const [title, setTitle] = useState("Clubs | Uni Link");
 
