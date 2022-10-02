@@ -19,7 +19,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col justify-center items-center pt-2 pb-2">
           <a
-            href="/Loginpg"
+            href="/home"
             className="bg-[#66fcf1] text-black font-bold rounded-lg p-2 px-3 shadow-md shadow-[#1A759F] hover:shadow-lg hover:scale-110 hover:shadow-[#1A759F] transition duration-300"
           >
             Log in
