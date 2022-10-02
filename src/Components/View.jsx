@@ -117,7 +117,7 @@ export default function View(props) {
             <div className="text-black-bold flex items-center p-4 text font-serif ">
               Club Size: {club && club.numberOfMembers}
               <br />
-              Year of Founded: {club && club.yearFounded}
+              Year Founded: {club && club.yearFounded}
             </div>
             <div className="flex justify-end h-44 p-3">
               <img
