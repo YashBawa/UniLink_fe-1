@@ -1,13 +1,19 @@
 import { Button } from "@mui/material";
 import { useEffect, useState } from "react";
+import { getClubs } from "../ApiUtils";
 import Header from "../Common/Header";
 
 export default function Clubs() {
   const [toggleDashboard, setToggleDashboard] = useState(false);
+  const [clubs, setClubs] = useState([]);
 
   useEffect(() => {
-    document.title = "Contests | Uni Link";
-  });
+    getClubs().then((data) => {
+      console.log(data);
+      setClubs(data);
+    });
+    document.title = "Clubs | Uni Link";
+  }, []);
 
   const students = [
     {
@@ -68,11 +74,11 @@ export default function Clubs() {
       </div>
       <div className="p-4 w-full text-[#184E77]">
         <p className="text-5xl font-bold pb-4">
-            <i class="fa-solid fa-hotel"></i>
+          <i class="fa-solid fa-hotel"></i>
           &nbsp; Clubs
         </p>
         <div className="flex flex-wrap gap-4">
-          <div className="flex flex-col gap-2 justify-center items-center bg-[#8ce492]  p-6 px-16 w-full md:w-1/4 flex-grow rounded-lg shadow-xl"> 
+          <div className="flex flex-col gap-2 justify-center items-center bg-[#8ce492]  p-6 px-16 w-full md:w-1/4 flex-grow rounded-lg shadow-xl">
             <p className="text-7xl font-bold text-[#184E77]">{23}</p>
             <p className="text-[#0075A2]">Active Events</p>
           </div>
@@ -84,32 +90,30 @@ export default function Clubs() {
         <div>
           <div className="flex justify-end p-2 pt-4">
             <Button variant="contained">
-              <i className="fa fa-plus"></i>&nbsp; Host New Event 
+              <i className="fa fa-plus"></i>&nbsp; Host New Event
             </Button>
           </div>
           <div className="pt-8 grid md:grid-cols-2 grid-cols-1 gap-4">
-            {students.map((student) => (
+            {clubs.map((club) => (
               <div className="flex gap-4 bg-blue-200 rounded-lg p-2 relative shadow hover:shadow-xl transition duration-300">
                 <div className="flex items-center">
-                  <img
+                  {/* <img
                     src={student.image}
                     alt="profile"
                     className="rounded-full p-4"
                     width={100}
                     height={100}
-                  />
+                  /> */}
                 </div>
-                <div className="text-xl flex items-center w-1/3">
-                  {student.name}
+                <div className="text-xl flex items-center w-1/3 font-bold">
+                  {club.name}
                 </div>
                 <div className="flex items-center w-1/3">
-                  {student.description}
+                  Size: {club.numberOfMembers}
                 </div>
                 <div className="flex items-center">
                   <Button variant="contained" color="secondary">
-                  <a href="/View">
-                    View
-                  </a>
+                    <a href={`/club/${club._id}/`}>View</a>
                   </Button>
                 </div>
               </div>

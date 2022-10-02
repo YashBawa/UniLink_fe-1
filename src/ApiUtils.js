@@ -1,5 +1,5 @@
-// const baseURL = "https://hostelite-api.herokuapp.com/";
-const baseURL = "http://127.0.0.1:8000/";
+const baseURL = "https://uni-link-api.herokuapp.com/api/";
+// const baseURL = "http://127.0.0.1:8000/";
 
 // main request function
 const request = async (method = "GET", data = {}, endpoint) => {
@@ -43,7 +43,7 @@ const request = async (method = "GET", data = {}, endpoint) => {
 
 export const login = async (username, password) => {
   const data = { username: username, password: password };
-  return request("POST", data, "api-token-auth/");
+  return request("POST", data, "user/");
 };
 
 export const signup = async (username, password) => {
@@ -55,11 +55,6 @@ export const me = async () => {
   return request("GET", {}, "api/user/");
 };
 
-export const allUsers = async () => {
-  return request("GET", {}, "user/");
-};
-
-export const createHealthReport = async (id, description) => {
-  const data = { reportee: id, repotrer: 1, description: description };
-  return request("POST", data, "health/");
+export const getClubs = async () => {
+  return request("GET", {}, "clubs/");
 };

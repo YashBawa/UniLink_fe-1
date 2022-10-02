@@ -16,10 +16,10 @@ import Clubs from "./Components/Clubs";
 import View from "./Components/View";
 const route = {
   "/": () => <Home />,
-  "/View":()=><View />,
-  "/Signup":()=><Signup/>,
-  "/Clubs":()=><Clubs/>,
-  "/Loginpg":()=> <Loginpg />,
+  "/club/:id": ({ id }) => <View id={String(id)} />,
+  "/Signup": () => <Signup />,
+  "/Clubs": () => <Clubs />,
+  "/Loginpg": () => <Loginpg />,
   "/home": () => <HomePage />,
   "/connect": () => <Connect />,
   "/blogs": () => <Blogs />,
