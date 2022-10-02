@@ -70,7 +70,7 @@ export default function Dashboard() {
                   </span>
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="/blogs"
                   className="relative flex flex-row items-center h-11 focus:outline-none hover:font-bold hover:bg-[#92e7ed] text-[#92e7ed] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent pr-6"
@@ -82,8 +82,8 @@ export default function Dashboard() {
                     Blogs
                   </span>
                 </Link>
-              </li>
-              
+              </li> */}
+
               <li>
                 <Link
                   href="/hackathon"
